@@ -16,7 +16,8 @@ public class OrderService {
     public double total(Order order){
 
 
-        return  Double.parseDouble("Pedido código: "+ order.getCodigo() +"\nValor Total :"+ shippingServices.shipment(order));
+        return shippingServices.shipment(order);
+       // return  Double.parseDouble("Pedido código: "+ order.getCodigo() +"\nValor Total :"+ shippingServices.shipment(order));
 
     }
 }
